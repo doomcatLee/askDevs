@@ -1,0 +1,13 @@
+{"blogs": [{
+  "id": 1,
+  "name": "Alex",
+  "location": "San Francisco",
+  "content": "Estate"
+
+}, {
+  "id": 2,
+  "name": "Taylor",
+  "location": "Seattle",
+  "content": "Condo"
+}]
+}
