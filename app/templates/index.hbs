@@ -6,29 +6,23 @@
   <div class="well">
     <div class="">
         <h1>Displaying Questions</h1>
+        {{new-question saveQuestion2="saveQuestion3"}}
         {{#each model as |question|}}
         <div class="well">
-          <h4>ID: {{question.id}}</h4>
           <h4>Name: {{question.name}}</h4>
           <h4>Content: {{question.content}}</h4>
-          <h4>Rating: {{question.location}}</h4>
+          <h4>Rating: {{question.rating}}</h4>
+          {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
         </div>
-        {{question-tile question=question destroyQuestion="destroyQuestion"}}
         {{/each}}
 
-        {{new-question saveQuestion2="saveQuestion3"}}
 
-        {{#link-to 'about'}}About{{/link-to}}
-        {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+
     </div>
     <div class="">
       <h1>Blog 2</h1>
     </div>
-    <div class="">
-      <h1>Blog 3</h1>
-    </div>
-    <div class="">
-      <h1>Blog 4</h1>
-    </div>
+    {{#link-to 'about'}}About{{/link-to}}
+    {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
   </div>
 </div>
