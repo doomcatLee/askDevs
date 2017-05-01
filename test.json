@@ -1,13 +1,23 @@
-{"questions": [{
-  "id": 1,
-  "name": "Alex",
-  "content": "Why is planet so awesome?",
-  "rating": 2
-
-}, {
-  "id": 2,
-  "name": "Taylor",
-  "content": "Where does the name javascript come from?",
-  "rating": 5
-}]
+{ "questions": [{
+    "name": "Veruca Salt",
+    "content": "San Francisco",
+    "rating": "Estate"
+  }, {
+    "name": "Mike Teavee",
+    "content": "Seattle",
+    "rating": "Condo"
+  }, {
+    "name": "Violet Beauregarde",
+    "content": "Portland",
+    "rating": "Apartment"
+  }],
+  "answers": [{
+    "name": "Andrea",
+    "rating": 4,
+    "content": "Did not fall down."
+  }, {
+    "name": "Alex",
+    "rating": 9,
+    "content": "Nice view of the volcano!"
+  }]
 }
