@@ -17,11 +17,9 @@
         {{/each}}
 
 
-
     </div>
     <div class="">
       <h1>Answers</h1>
-      {{new-answer saveAnswer2="saveAnswer3"}}
       <ul>
       {{#each model.answers as |answer|}}
         <li>{{answer.rating}} - {{answer.content}} - by {{answer.name}}</li>
