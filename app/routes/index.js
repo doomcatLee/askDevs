@@ -1,20 +1,20 @@
 import Ember from 'ember';
 
-var blogs = [{
-  id: 1,
-  name: "Alex",
-  location: "San Francisco",
-  content: "Estate"
-
-}, {
-  id: 2,
-  name: "Taylor",
-  location: "Seattle",
-  content: "Condo"
-}];
-
 export default Ember.Route.extend({
   model() {
-    return blogs;
+    return this.store.findAll('question');
   },
+
+  actions: {
+    saveQuestion3(params) {
+      var newQuestion = this.store.createRecord('question', params);
+      newQuestion.save();
+      this.transitionTo('index');
+    },
+
+    destroyQuestion(question) {
+      question.destroyRecord();
+      this.transitionTo('index');
+    }
+  }
 });

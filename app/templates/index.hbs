@@ -1,20 +1,25 @@
 
 <div class="row">
   <div class="well">
-    <h1>WallBlog</h1>
-    <h2>Post your blogs!</h2>
+    <h1>Ask Your Developer!</h1>
   </div>
   <div class="well">
     <div class="">
-        <h1>Displaying Blog</h1>
-        {{#each model as |blog|}}
+        <h1>Displaying Questions</h1>
+        {{#each model as |question|}}
         <div class="well">
-          <h4>ID: {{blog.id}}</h4>
-          <h4>Name: {{blog.name}}</h4>
-          <h4>Location: {{blog.location}}</h4>
-          <h4>Content: {{blog.content}}</h4>
+          <h4>ID: {{question.id}}</h4>
+          <h4>Name: {{question.name}}</h4>
+          <h4>Content: {{question.content}}</h4>
+          <h4>Rating: {{question.location}}</h4>
         </div>
+        {{question-tile question=question destroyQuestion="destroyQuestion"}}
         {{/each}}
+
+        {{new-question saveQuestion2="saveQuestion3"}}
+
+        {{#link-to 'about'}}About{{/link-to}}
+        {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
     </div>
     <div class="">
       <h1>Blog 2</h1>
