@@ -18,10 +18,10 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: "AIzaSyC6-YKGrEyY8mG3LBtlC8a1-kC02eMPDYY",
-   authDomain: "askdevs-be85d.firebaseapp.com",
-   databaseURL: "https://askdevs-be85d.firebaseio.com",
-      storageBucket: "askdevs-be85d.appspot.com"
+      apiKey: "AIzaSyCOZBuSfcPRjVQlwZM5CX4DQCIh5J_891Q",
+      authDomain: "askdevs-cf5d7.firebaseapp.com",
+      databaseURL: "https://askdevs-cf5d7.firebaseio.com",
+      storageBucket: "askdevs-cf5d7.appspot.com"
     },
 
 

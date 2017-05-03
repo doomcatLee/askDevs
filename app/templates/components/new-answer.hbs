@@ -3,6 +3,10 @@
   <div>
     <form>
       <div class="form-group">
+        <label for="title">Title</label>
+        {{input value=title id="title"}}
+      </div>
+      <div class="form-group">
         <label for="name">Name</label>
         {{input value=name id="name"}}
       </div>
@@ -14,9 +18,9 @@
         <label for="rating">Rating</label>
         {{input value=rating id="rating"}}
       </div>
-      <button {{action 'saveAnswer'}}>Save</button>
+      <button class="btn btn-default" {{action 'saveAnswer'}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'answerFormShow'}}>New Answer</button>
+  <button class="btn btn-default" {{action 'answerFormShow'}}>New Answer</button>
 {{/if}}

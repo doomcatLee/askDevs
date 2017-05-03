@@ -1,5 +1,11 @@
-Located in {{question.name}}, this {{question.content}} bedroom {{question.rating}}
-<br>
 
 
-<button {{action 'delete' question}}>Delete</button>
+<h2> Answers </h2>
+<ul>
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
+
+
+<button class="btn btn-default" {{action 'delete' question}}>Delete</button>

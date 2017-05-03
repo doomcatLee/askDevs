@@ -1,5 +1,13 @@
-<h2>More information about {{model.name}}'s {{model.content}}:</h2>
 
-{{update-question question=model update="update"}}
+<div class="well">
+  <h4>Name: {{model.name}}</h4>
+  <h4>Content: {{model.content}}</h4>
+  {{update-question question=model update="update"}}
+</div>
 
-{{question-detail question=model destroyQuestion="destroyQuestion"}}
+<div class="well">
+  {{question-detail question=model destroyQuestion="destroyQuestion"}}
+
+  {{new-answer saveAnswer="saveAnswer" question=model}}
+
+</div>

@@ -8,6 +8,7 @@ export default Ember.Component.extend({
     },
     update(question) {
       var params = {
+        title: this.get('title'),
         name: this.get('name'),
         content: this.get('content'),
         rating: this.get('rating')
