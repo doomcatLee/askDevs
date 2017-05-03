@@ -1,7 +1,7 @@
 # AskDevs
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This application is a question and answers form.
+Users can post questions which is stored in the firebase and answers where users can also reply with answers. Updating answers and questions also possible.
 
 ## Prerequisites
 
@@ -10,8 +10,6 @@ You will need the following things properly installed on your computer.
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with NPM)
 * [Bower](https://bower.io/)
-* [Ember CLI](https://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
 
 ## Installation
 
