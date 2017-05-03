@@ -1,22 +1,17 @@
 {{#if addNewAnswer}}
-<h1>New Answer</h1>
   <div>
     <form>
       <div class="form-group">
-        <label for="title">Title</label>
-        {{input value=title id="title"}}
-      </div>
-      <div class="form-group">
         <label for="name">Name</label>
-        {{input value=name id="name"}}
+        {{input class="form-control" value=name id="name"}}
       </div>
       <div class="form-group">
         <label for="content">Content</label>
-        {{input value=content id="content"}}
+        {{input class="form-control" value=content id="content"}}
       </div>
       <div class="form-group">
         <label for="rating">Rating</label>
-        {{input value=rating id="rating"}}
+        {{input class="form-control" value=rating id="rating"}}
       </div>
       <button class="btn btn-default" {{action 'saveAnswer'}}>Save</button>
     </form>

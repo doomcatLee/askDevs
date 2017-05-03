@@ -1,12 +1,12 @@
 
 <div class="well">
-  <h4>Name: {{model.name}}</h4>
-  <h4>Content: {{model.content}}</h4>
+  <h2>{{model.title}}</h2>
+  <p>{{model.content}}</p>
   {{update-question question=model update="update"}}
 </div>
 
 <div class="well">
-  {{question-detail question=model destroyQuestion="destroyQuestion"}}
+  {{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer"}}
 
   {{new-answer saveAnswer="saveAnswer" question=model}}
 
